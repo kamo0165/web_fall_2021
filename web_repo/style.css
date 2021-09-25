@@ -1,61 +1,24 @@
 body {
-  background-color: white;
+  background-color: #white;
   font-family: 'Ramabhadra';
   font-size: 2vw;
   font-weight: 100;
+  color: #203656;
 
   border: solid rgb(100,100,100) 1px;
+  padding-left: 50px;
 }
 
-p{
-  color: rgb(100,100,100);
-}
 
-h1{
-  background-color: blue;
-  font-family:"Fjalla One";
-}
 
-.grey{
-  color:rgb(100,100,100)
-}
 
-.background p{
-  color: red;
-}
-
-span{
-  color:rgb(100,0,0);
-  font-weight: bold;
-}
-
-#sit{
-  font-family: cursive;
-}
-
-hr{
-  border-style: dashed;
-}
-
-#two{
-  border: solid black 1px;
-  background-color:yellow;
-  margin: 50 px;
-  padding-left: 50px 0px 30px 0px;
+#aboutme{
+  border: solid #203656 1px;
+  background-color: #C14803;
+  font-family: 'PT Serif';
+  margin: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 0px 30px 0px 30px;
-}
-
-#hero{
-  width: 100vw;
-  /* max-height: 50vh; */
-  margin:0px;
-  padding:0px;
-  z-index: -1;
-
-}
-
-#header{
-  height:50vh;
-  overflow: hidden;
-  z-index: 1;
+  color: white;
 }
