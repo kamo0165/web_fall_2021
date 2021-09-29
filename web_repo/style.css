@@ -71,12 +71,14 @@ button{
 }
 
 button:active{
-  background-color: #A8CC9C;
+  background-color: #203656;
   color: white;
+  border: solid #203656;
   /* background-blend-mode: color-burn; */
 }
 
 button:hover{
-  border: #203656 5px;
+  border: #203656 3px;
   color: #A8CC9C;
+  border: solid #203656;
 }
