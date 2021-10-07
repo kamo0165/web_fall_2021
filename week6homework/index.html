@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html lang = "en">
+<head>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = '//fonts.googleapis.com/css?family=Ramabhadra' />
+  <link rel = "stylesheet" href = '//fonts.googleapis.com/css?family=PTSerif' />
+  <title>Week 6 Homework</title>
+  </head>
+
+  <body>
+  <section id="takeoutPick">
+    <h1 id = "qtext">Welcome to the takeout decision helper. Click the button to find out what you should order tonight!</h1>
+    <button id="newfood" >New Food</button>
+  </section>
+
+  <section>
+    <h2 id = "ask">Do you like this option?</h2>
+    <button id = "yes" >Yes</button>
+    <button id = "no" >No</button>
+  </section>
+
+
+  <script>
+    const food = ["Pizza", "Sushi", "Burrito", "Sandwich", "Salad", "Hamburger", "Chicken Curry", "Chinese Food"];
+    // console.log("Hello World");
+    let foodcount = 0;
+
+    const doorDash = ["https://www.doordash.com"];
+
+    document.getElementById("newfood").addEventListener("click", buttonClicked);
+
+    function buttonClicked(){
+      // alert("button clicked");
+      console.log(food[foodcount]);
+      document.getElementById("qtext").innerHTML = food[foodcount];
+
+      if(foodcount>6){
+        foodcount = 0;
+      }
+      else{
+        foodcount ++;
+      }
+    }
+
+
+    document.getElementById("yes").addEventListener("click", buttonClick);
+
+    function buttonClick(){
+      alert("Head to Doordash!");
+      console.log(doorDash);
+    }
+
+    document.getElementById("no").addEventListener("click", button);
+    function button(){
+      alert("Why don't you try picking a new food option!");
+    }
+
+  </script>
+
+  </body>
+
+  </html>

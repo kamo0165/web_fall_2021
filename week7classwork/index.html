@@ -1,0 +1,54 @@
+<DOCTYPE html>
+<html lang = "en">
+<head>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Merriweather">
+  <title>Week 7 Quote Machine</title>
+  </head>
+
+  <body>
+  <section id="quotesection">
+    <h1 id = "qtext">Welcome to the quote machine, click the button to get a quote!</h1>
+    <button id="newquote" >New Quote</button>
+  </section>
+
+  <section id="flex">
+    <div class="flexitem">
+      <h2>one</h2>
+    </div>
+
+      <div class="flexitem">
+        <h2>two</h2>
+      </div>
+
+        <div class="flexitem">
+          <h2>three</h2>
+        </div>
+
+  </section>
+
+  <script>
+    const quotes = ["Life is 10% what happens to us and 90% how we react to it.", "Be not afraid of life. Believe that life is worth living, and your belief will help create the fact.", "Even if you’re on the right track, you’ll get run over if you just sit there.", "When I hear somebody sigh, ‘Life is hard,’ I am always tempted to ask, ‘Compared to what?’", "Nurture your mind with great thoughts. To believe in the heroic makes heroes.", "You may find the worst enemy or best friend in yourself.", "Courage is the first of human qualities because it is the quality which guarantees all others.", "Live each day as if your life had just begun."];
+    // console.log("Hello World");
+    let quotecount = 0;
+
+    document.getElementById("newquote").addEventListener("click", buttonClicked);
+
+    function buttonClicked(){
+      alert("button clicked");
+      console.log(quotes[quotecount]);
+      document.getElementById("qtext").innerHTML = quotes[quotecount];
+
+      if(quotecount>6){
+        quotecount = 0;
+      }
+      else{
+        quotecount ++;
+      }
+    }
+
+  </script>
+
+  </body>
+
+  </html>
