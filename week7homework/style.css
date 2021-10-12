@@ -1,0 +1,38 @@
+img{
+  max-width:110vw;
+  height: 45vh;
+  width: 100vw;
+  object-fit: cover;
+  padding:5px;
+}
+
+#quotesection{
+  background-color: #C14803;
+  margin: 15vh 20vw;
+  padding: 8vh 10vw 10vh 10vw;
+  border-radius: 8PX;
+  font: "PTSerif";
+}
+
+button{
+  font-family: "Ramabhadra";
+  border-radius: 8px;
+  padding: 1vh 3vw;
+  float: right;
+  margin-top: 1vh;
+  background-color: #203656;
+  color: #FFDEC0;
+}
+
+button:hover{
+  border: #fff solid 1px;
+}
+
+button:active{
+  color: #c3c6c9
+}
+
+h1{
+  color: #FFDEC0;
+  font: "PTSerif";
+}
