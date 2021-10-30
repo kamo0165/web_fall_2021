@@ -1,5 +1,5 @@
 #header{
-  background-color: white;
+  /* background-color: white; */
   width:100vw;
   height: 30vh;
   margin: 10vh 10vw 0 0vw;
@@ -27,11 +27,12 @@ body {
 
 div.day{
   background-color: white;
-  margin-left: 2px;
-  margin-right: 25px;
+  margin-left: 5px;
+  margin-right: 15px;
   margin-bottom: 25px;
-  padding: 15px;
+  padding: 20px;
   border-bottom: solid #203656 1px;
+  border-left: solid #203656 1px;
 
 }
 
@@ -44,9 +45,13 @@ div.green{
 #tabs{
   background-color: white;
   display:flex;
-  margin: 10vh 0vw 0 0vw;
-  padding: 0px;
+  margin: 10vh 0vw 10vh 0vw;
+  padding: 50px;
   border-width: 0px;
+}
+
+#body{
+  font-family: 'PTSerif';
 }
 
 /* .options{
@@ -64,12 +69,31 @@ img{
 }
 
 button{
-  float:right;
-  padding: 10px 50px;
-  margin-right: 3vw;
+  background-color: #FFFFFF;
+  border: solid #203656;
+  font-family: "Ramabhadra";
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 15px;
+  padding: 10px 15px;
 }
 
-.blue{
-  background-color: blue;
+button:active{
+  background-color: #203656;
   color: white;
+  border: solid #203656;
+  /* background-blend-mode: color-burn; */
+}
+
+button:hover{
+  border: #203656 2px;
+  color: #203656;
+  border: solid #203656;
+}
+
+button:active{
+  background-color: #203656;
+  color: white;
+  border: solid #203656;
+  /* background-blend-mode: color-burn; */
 }
