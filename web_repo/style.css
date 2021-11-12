@@ -1,13 +1,54 @@
-body {
-  background-color: #white;
-  font-family: 'Ramabhadra';
-  font-size: 2vw;
-  font-weight: 100;
-  color: #203656;
 
-  border: solid rgb(100,100,100) 1px;
-  border-color: #203656;
-  /* padding-left: 50px; */
+@media screen and (max-width: 1350px){
+  body {
+    background-color: white;
+    font-family: 'Ramabhadra';
+    font-size: 2vw;
+    font-weight: 100;
+    color: #203656;
+
+    border: solid rgb(100,100,100) 1px;
+    border-color: #203656;
+    /* padding-left: 50px; */
+  }
+}
+
+@media screen and (min-width: 1351px){
+  body{
+    background-color: #203656;
+    font-family: 'Ramabhadra';
+    font-size: 2vw;
+    font-weight: 100;
+    color: white;
+
+    border: solid rgb(100,100,100) 1px;
+    border-color: #203656;
+  }
+}
+
+#container{
+display: grid;
+grid-template-columns: 33% 33% auto;
+grid-template-rows: auto;
+grid-template-areas: "one" "two" "three";
+text-align: center;
+}
+
+#p1{
+  grid-area: "one";
+}
+
+#p2{
+  grid-area: "two";
+}
+
+#p3{
+  grid-area: "three";
+}
+
+.col{
+  padding: 5px;
+  margin: 5px;
 }
 
 
@@ -48,7 +89,7 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   margin: 0px 30px 0px 30px;
-  color: white;
+  /* color: white; */
 }
 
 #goals{
